@@ -150,15 +150,15 @@ void jouer()
 			const char *resultat;
 			if (won(move, x))
 			{
-				resultat = "X won !";
+				resultat = "X won!";
 			}
 			else if (won(move, o))
 			{
-				resultat = "O won !";
+				resultat = "O won!";
 			}
 			else
 			{
-				resultat = "It's a tie !";
+				resultat = "It's a tie!";
 			}
 			int textWidth = MeasureText(resultat, 75);
 			DrawText(resultat, (screenWidth - textWidth) / 2, length(1) + 10, 75, DARKGRAY);

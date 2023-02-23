@@ -150,20 +150,20 @@ void jouer()
 			const char *resultat;
 			if (won(move, x))
 			{
-				resultat = "X a gagné !";
+				resultat = "X won !";
 			}
 			else if (won(move, o))
 			{
-				resultat = "O a gagné !";
+				resultat = "O won !";
 			}
 			else
 			{
-				resultat = "Égalité !";
+				resultat = "It's a tie !";
 			}
 			int textWidth = MeasureText(resultat, 75);
 			DrawText(resultat, (screenWidth - textWidth) / 2, length(1) + 10, 75, DARKGRAY);
 
-			char suivant[] = "Cliquez pour relancer une partie.";
+			char suivant[] = "Click to start a new game.";
 			textWidth = MeasureText(suivant, 20);
 			DrawText(suivant, (screenWidth - textWidth) / 2, length(1) + 3 * marginInt, 20, DARKGRAY);
 
